@@ -3,7 +3,9 @@ import myImage from "../assets/me-about.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscNewFolder } from "react-icons/vsc";
+import { MdVisibility } from "react-icons/md";
 import "./About.css";
+import AboutCard from "./AboutCard";
 const About = () => {
   return (
     <section id="about">
@@ -18,23 +20,30 @@ const About = () => {
 
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
-            </article>
-
-            <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>200+ Clients</small>
-            </article>
-
-            <article className="about__card">
-              <VscNewFolder className="about__icon" />
-              <h5>Projects</h5>
-              <small>10+ Completed</small>
-            </article>
+            <AboutCard
+              Icons={FaAward}
+              heading="Experience"
+              subHeading1="3"
+              subHeading2="+ Years Of Working"
+            />
+            <AboutCard
+              Icons={FiUsers}
+              heading="Clients"
+              subHeading1="200"
+              subHeading2="+ Clients"
+            />
+            <AboutCard
+              Icons={VscNewFolder}
+              heading="Projects"
+              subHeading1="10"
+              subHeading2="+ Completed"
+            />
+            <AboutCard
+              Icons={MdVisibility}
+              heading="Page Viewers"
+              subHeading1="127"
+              subHeading2=""
+            />
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
