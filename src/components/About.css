@@ -60,11 +60,11 @@
   -o-border-radius: 1rem;
   padding: 2rem;
   text-align: center;
-  transition: var(all 400m ease);
-  -webkit-transition: var(all 400m ease);
-  -moz-transition: var(all 400m ease);
-  -ms-transition: var(all 400m ease);
-  -o-transition: var(all 400m ease);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .about__card:hover {
   background: transparent;
