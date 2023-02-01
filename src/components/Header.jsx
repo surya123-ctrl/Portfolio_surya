@@ -9,6 +9,14 @@ function Header() {
       <div className="container header__container">
         <h3>Hello I'm</h3>
         <h1>Surya Pratap Singh</h1>
+        <hr
+          style={{
+            color: "#fff",
+            backgroundColor: "#fff",
+            height: 0.5,
+            borderColor: "#000000",
+          }}
+        />
         <h3>Frontend Web Developer , Designer & Programmer</h3>
         <CTA />
         <HeaderSocialMedia />
