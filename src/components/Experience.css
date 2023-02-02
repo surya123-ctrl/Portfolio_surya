@@ -55,9 +55,12 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .experience__details {
+    display: block;
+  }
   .experience__container {
     gap: 1rem;
-    width: 80%;
+    width: var(--container-width-sm);
   }
   .experience__container > div {
     width: 100%;
