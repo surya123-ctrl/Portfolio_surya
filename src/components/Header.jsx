@@ -5,7 +5,7 @@ import HeaderSocialMedia from "./HeaderSocialMedia";
 import "./Header.css";
 function Header() {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
         <h3>Hello I'm</h3>
         <h1>Surya Pratap Singh</h1>
