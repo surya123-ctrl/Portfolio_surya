@@ -3,7 +3,21 @@ import { BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import ContactOption from "./ContactOption";
 import "./Contact.css";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_qkgjue7",
+      "template_68553wr",
+      form.current,
+      "e6zH9wUmUL5yTALW3"
+    );
+    e.target.reset();
+  };
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -27,7 +41,7 @@ const Contact = () => {
             anchorText="WhatsApp me"
           />
         </div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
