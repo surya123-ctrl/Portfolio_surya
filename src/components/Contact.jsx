@@ -3,7 +3,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import ContactOption from "./ContactOption";
 import "./Contact.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 const Contact = () => {
   const form = useRef();
@@ -20,8 +20,8 @@ const Contact = () => {
   };
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h5>Let's make something amazing together.</h5>
+      <h2>Start by saying "hi".</h2>
       <div className="container contact__container">
         <div className="contact__options">
           <ContactOption

@@ -46,12 +46,12 @@ const About = () => {
             />
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-            quas debitis rem quae ad nemo unde ipsum sapiente. Vitae ut sequi
-            quasi accusamus necessitatibus! Sint, earum assumenda? Voluptate
-            dolorem voluptatem, temporibus inventore ut architecto minus
-            expedita autem sed doloremque, consequatur ipsum, amet odio sit
-            eius? Nobis ea non praesentium laboriosam?
+            Hey! Myself <b>Surya Pratap Singh</b>. I am a Computer Science
+            Student of <b>Chandigarh University</b>. I am developing skills of
+            Web Development and Designing. I have also done<b> 300+ </b>
+            questions on <b>LeetCode</b> and <b>150+ </b>
+            questions on <b>GeeksForGeeks</b> based on
+            <b> Data Structures and Algorithms</b>.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

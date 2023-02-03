@@ -9,60 +9,40 @@ const data_frontEnd = [
   },
   {
     id: 2,
-    heading: "HTML",
-    subHeading: "Experienced",
+    heading: "CSS",
+    subHeading: "Intermediate",
   },
   {
     id: 3,
-    heading: "HTML",
-    subHeading: "Experienced",
+    heading: "Java Script",
+    subHeading: "Intermediate",
   },
   {
     id: 4,
-    heading: "HTML",
+    heading: "React.Js",
     subHeading: "Experienced",
   },
   {
     id: 5,
-    heading: "HTML",
-    subHeading: "Experienced",
+    heading: "Vue.js",
+    subHeading: "Beginner",
   },
   {
     id: 6,
-    heading: "HTML",
+    heading: "SCSS",
     subHeading: "Experienced",
   },
 ];
 const data_backEnd = [
   {
     id: 1,
-    heading: "HTML",
-    subHeading: "Experienced",
+    heading: "Node.js",
+    subHeading: "Beginner",
   },
   {
     id: 2,
-    heading: "HTML",
-    subHeading: "Experienced",
-  },
-  {
-    id: 3,
-    heading: "HTML",
-    subHeading: "Experienced",
-  },
-  {
-    id: 4,
-    heading: "HTML",
-    subHeading: "Experienced",
-  },
-  {
-    id: 5,
-    heading: "HTML",
-    subHeading: "Experienced",
-  },
-  {
-    id: 6,
-    heading: "HTML",
-    subHeading: "Experienced",
+    heading: "My SQL",
+    subHeading: "Intermediate",
   },
 ];
 const Experience = () => {
