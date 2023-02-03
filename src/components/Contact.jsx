@@ -18,6 +18,47 @@ const Contact = () => {
     );
     e.target.reset();
   };
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  let name, value;
+  const postUserData = (event) => {
+    name = event.target.name;
+    value = event.target.value;
+    setUserData({ ...userData, [name]: value });
+  };
+  const submitData = async (event) => {
+    event.preventDefault();
+    const { name, email, message } = userData;
+    if (name && email && message) {
+      const response = fetch(
+        "https://suryasinghss-bd90c-default-rtdb.firebaseio.com//SuryaSinghSS_DataRecords.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+          }),
+        }
+      );
+      if (response) {
+        setUserData({
+          name: "",
+          email: "",
+          message: "",
+        });
+        alert("Message Sent.");
+      }
+    } else {
+      alert("Please add the data.");
+    }
+  };
   return (
     <section id="contact">
       <h5>Let's make something amazing together.</h5>
@@ -41,21 +82,36 @@ const Contact = () => {
             anchorText="WhatsApp me"
           />
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} method="POST">
           <input
             type="text"
             name="name"
             placeholder="Your Full Name"
+            value={userData.name}
+            onChange={postUserData}
             required
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={userData.email}
+            onChange={postUserData}
+            required
+          />
           <textarea
             name="message"
             rows="10"
             placeholder="Your Message"
+            value={userData.message}
+            onChange={postUserData}
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={submitData}
+          >
             Send Message
           </button>
         </form>
