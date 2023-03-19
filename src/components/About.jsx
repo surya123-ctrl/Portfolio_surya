@@ -1,9 +1,9 @@
 import React from "react";
-import myImage from "../assets/me-about.jpg";
+// import myImage from "../assets/programmer.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscNewFolder } from "react-icons/vsc";
-import { MdVisibility } from "react-icons/md";
+// import { MdVisibility } from "react-icons/md";
 import "./About.css";
 import AboutCard from "./AboutCard";
 const About = () => {
@@ -14,7 +14,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={myImage} alt="myImage" />
+            {/* <img src={myImage} alt="myImage" /> */}
           </div>
         </div>
 
@@ -23,13 +23,13 @@ const About = () => {
             <AboutCard
               Icons={FaAward}
               heading="Experience"
-              subHeading1="3"
+              subHeading1="1"
               subHeading2="+ Years Of Working"
             />
             <AboutCard
               Icons={FiUsers}
               heading="Clients"
-              subHeading1="200"
+              subHeading1="50"
               subHeading2="+ Clients"
             />
             <AboutCard
@@ -38,20 +38,25 @@ const About = () => {
               subHeading1="10"
               subHeading2="+ Completed"
             />
-            <AboutCard
+            {/* <AboutCard
               Icons={MdVisibility}
               heading="Page Viewers"
               subHeading1="127"
               subHeading2=""
-            />
+            /> */}
           </div>
           <p>
-            Hey! Myself <b>Surya Pratap Singh</b>. I am a Computer Science
+            {/* Hey! Myself <b>Surya Pratap Singh</b>. I am a Computer Science
             Student of <b>Chandigarh University</b>. I am developing skills of
             Web Development and Designing. I have also done<b> 300+ </b>
             questions on <b>LeetCode</b> and <b>150+ </b>
             questions on <b>GeeksForGeeks</b> based on
-            <b> Data Structures and Algorithms</b>.
+            <b> Data Structures and Algorithms</b>. */}
+            Hello! I'm Surya Pratap Singh, born in Lucknow, Uttar Pradesh.
+            Currently pursuing my Engineering in Computer Science from
+            Chandigarh University. I'm open for work and designing website. If
+            you want to get appraisal from international clients or Senior head,
+            you can rely on me.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

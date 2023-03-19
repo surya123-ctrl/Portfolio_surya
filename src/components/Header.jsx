@@ -1,6 +1,6 @@
 import React from "react";
 import CTA from "./CTA";
-import myImage from "../assets/me.png";
+// import myImage from "../assets/me.png";
 import HeaderSocialMedia from "./HeaderSocialMedia";
 import "./Header.css";
 function Header() {
@@ -20,9 +20,9 @@ function Header() {
         <h3>Frontend Web Developer , Designer & Programmer</h3>
         <CTA />
         <HeaderSocialMedia />
-        <div className="myImage">
+        {/* <div className="myImage">
           <img src={myImage} alt="myImage" />
-        </div>
+        </div> */}
         <a href="#contact" className="scroll__down">
           Scroll Down
         </a>

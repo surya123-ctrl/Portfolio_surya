@@ -1,54 +1,27 @@
 import React from "react";
-import img1 from "../assets/portfolio1.jpg";
-// import img2 from "../assets/portfolio2.jpg";
-// import img3 from "../assets/portfolio3.jpg";
-// import img4 from "../assets/portfolio4.jpg";
-// import img5 from "../assets/portfolio5.png";
-// import img6 from "../assets/portfolio6.jpg";
 import "./Portfolio.css";
 import PortfolioBlock from "./PortfolioBlock";
 const data = [
   {
     id: 1,
-    image: img1,
-    title: "xyz",
-    github_link: "https://github.com/surya123-ctrl",
-    live_demo_link: "https://github.com/surya123-ctrl",
+    image: "https://i.imgur.com/NTpOElb.jpg",
+    title: "Bunk4Study",
+    github_link: "https://github.com/surya123-ctrl/Bunk4Study-Extension",
+    live_demo_link: "https://bunk4study.netlify.app/",
   },
   {
     id: 2,
-    image: img1,
-    title: "xyz",
-    github_link: "https://github.com/surya123-ctrl",
-    live_demo_link: "https://github.com/surya123-ctrl",
+    image: "https://i.imgur.com/ratDKWy.jpg",
+    title: "Surya Singh - Portfolio",
+    github_link: "https://github.com/surya123-ctrl/Portfolio_surya",
+    live_demo_link: "https://suryasinghss-bd90c.web.app/",
   },
   {
     id: 3,
-    image: img1,
-    title: "xyz",
-    github_link: "https://github.com/surya123-ctrl",
-    live_demo_link: "https://github.com/surya123-ctrl",
-  },
-  {
-    id: 4,
-    image: img1,
-    title: "xyz",
-    github_link: "https://github.com/surya123-ctrl",
-    live_demo_link: "https://github.com/surya123-ctrl",
-  },
-  {
-    id: 5,
-    image: img1,
-    title: "xyz",
-    github_link: "https://github.com/surya123-ctrl",
-    live_demo_link: "https://github.com/surya123-ctrl",
-  },
-  {
-    id: 6,
-    image: img1,
-    title: "xyz",
-    github_link: "https://github.com/surya123-ctrl",
-    live_demo_link: "https://github.com/surya123-ctrl",
+    image: "https://i.imgur.com/HfOkvXM.jpg",
+    title: "Compensation Management System",
+    github_link: "https://github.com/surya123-ctrl/cms-frontend",
+    live_demo_link: "",
   },
 ];
 const Portfolio = () => {
