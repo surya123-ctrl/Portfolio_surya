@@ -32,33 +32,58 @@ const Contact = () => {
   const submitData = async (event) => {
     event.preventDefault();
     const { name, email, message } = userData;
-    if (name && email && message) {
-      const response = fetch(
-        "https://suryasinghss-bd90c-default-rtdb.firebaseio.com//SuryaSinghSS_DataRecords.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+    const res = fetch(
+      "https://suryasinghss-bd90c-default-rtdb.firebaseio.com/userDataRecords.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
           body: JSON.stringify({
             name,
             email,
             message,
           }),
-        }
-      );
-      if (response) {
-        setUserData({
-          name: "",
-          email: "",
-          message: "",
-        });
-        alert("Message Sent.");
+        },
       }
+    );
+    if (res) {
+      setUserData({
+        name: "",
+        email: "",
+        message: "",
+      });
+      alert("Message Sent.");
     } else {
       alert("Please add the data.");
     }
   };
+  // const { name, email, message } = userData;
+  //   if (name && email && message) {
+  //     const response = fetch(
+  //       "https://suryasinghss-bd90c-default-rtdb.firebaseio.com//SuryaSinghSS_DataRecords.json",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           name,
+  //           email,
+  //           message,
+  //         }),
+  //       }
+  //     );
+  //   if (response) {
+  //     setUserData({
+  //       name: "",
+  //       email: "",
+  //       message: "",
+  //     });
+  //     alert("Message Sent.");
+  //   }
+  // } else {
+  //   alert("Please add the data.");
+  // }
   return (
     <section id="contact">
       <h5>Let's make something amazing together.</h5>
