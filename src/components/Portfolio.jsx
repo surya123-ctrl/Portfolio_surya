@@ -26,6 +26,13 @@ const data = [
   },
   {
     id: 4,
+    image: "https://i.imgur.com/CPtwDJM.jpg",
+    title: "Weather-Web",
+    github_link: "https://github.com/surya123-ctrl/weather_web_app",
+    live_demo_link: "https://main--frabjous-pothos-aaac9c.netlify.app/",
+  },
+  {
+    id: 5,
     image: "https://i.imgur.com/HfOkvXM.jpg",
     title: "Compensation Management System",
     github_link: "https://github.com/surya123-ctrl/cms-frontend",
